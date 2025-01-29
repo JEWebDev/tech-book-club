@@ -1,0 +1,24 @@
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  padding: 21px 23px;
+
+  font-family: "Martian Mono";
+  font-size: 1rem;
+  font-weight: 600;
+
+  line-height: 1.3;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid black;
+  border-radius: 8px;
+
+  background-color: var(--light-salmon-50);
+}

@@ -1,0 +1,45 @@
+.hero-section {
+  padding: 1.5rem 1rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("assets/images/pattern-light-bg.svg");
+
+  header {
+    margin-bottom: 48px;
+  }
+
+  h1.gradient {
+    background: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  p {
+    font-family: "Inter";
+    font-size: var(--text-preset-5);
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: var(--neutral-700);
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__text .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  picture {
+    margin-top: 4rem;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+}
