@@ -1,0 +1,59 @@
+.membership-options {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  header {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--neutral-200);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    p {
+      font-family: "Inter";
+      font-size: var(--text-preset-5);
+      color: var(--neutral-700);
+
+      .price {
+        font-size: 34px;
+        font-family: "Martian Mono";
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -1px;
+        color: var(--neutral-900);
+      }
+    }
+  }
+  .plans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+
+    .plan {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      border: 1px solid var(--neutral-200);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+
+      .perks-list .perk {
+        align-items: flex-start;
+      }
+    }
+
+    .plan.featured {
+      background-color: #faf5f3;
+      position: relative;
+      overflow: hidden;
+
+      a {
+        z-index: 9999;
+      }
+    }
+  }
+}

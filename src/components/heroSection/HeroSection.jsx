@@ -14,7 +14,7 @@ export function HeroSection({ heading, description }) {
         <div className="hero-cta">
           <MainButton
             text={"review membership options"}
-            arrow={"assets/images/icon-arrow-down.svg"}
+            img={"assets/images/icon-arrow-down.svg"}
           ></MainButton>
           <Joined number={200}></Joined>
         </div>
@@ -23,6 +23,7 @@ export function HeroSection({ heading, description }) {
       <picture>
         <img src="assets/images/image-hero-mobile.webp" alt="" />
       </picture>
+      <div className="glow"></div>
     </section>
   )
 }

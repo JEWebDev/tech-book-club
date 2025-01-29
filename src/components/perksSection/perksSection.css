@@ -10,30 +10,12 @@
     gap: 1.5rem;
   }
 
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    li {
-      max-width: 320px;
-      font-family: "Inter";
-      font-size: var(--text-preset-5);
-      line-height: 1.4;
-      letter-spacing: -0.5px;
-      color: var(--neutral-700);
-
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    li::before {
-      content: url("assets/images/icon-check.svg");
-    }
+  .perk li::before {
+    min-width: 21px;
+    min-height: 21px;
+    max-width: 21px;
+    max-height: 21px;
   }
-
   img {
     border-radius: 12px;
   }

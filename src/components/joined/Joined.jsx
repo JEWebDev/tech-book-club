@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./joined.css"
+import { Rating } from "/src/components/rating/Rating"
 export function Joined({ number }) {
   return (
     <div className="card">
@@ -8,13 +9,7 @@ export function Joined({ number }) {
         alt="People who already joined"
       />
       <div className="joined">
-        <div className="rating">
-          <img src="assets/images/icon-star.svg" alt="star" />
-          <img src="assets/images/icon-star.svg" alt="star" />
-          <img src="assets/images/icon-star.svg" alt="star" />
-          <img src="assets/images/icon-star.svg" alt="star" />
-          <img src="assets/images/icon-star.svg" alt="star" />
-        </div>
+        <Rating></Rating>
         <p>
           <span>{number}</span>+ developers joined already
         </p>

@@ -2,6 +2,8 @@ import "./App.css"
 import { HeroSection } from "./components/heroSection/HeroSection.jsx"
 import { PerksSection } from "./components/perksSection/PerksSection.jsx"
 import { ConnectSection } from "./components/connectSection/ConnectSection.jsx"
+import { StepsSection } from "./components/stepsSection/StepsSection.jsx"
+import { MembershipsSection } from "./components/membershipsSection/MembershipsSection.jsx"
 function App() {
   return (
     <div className="page">
@@ -14,6 +16,8 @@ function App() {
         ></HeroSection>
         <PerksSection heading="Read together, grow together"></PerksSection>
         <ConnectSection></ConnectSection>
+        <StepsSection></StepsSection>
+        <MembershipsSection></MembershipsSection>
       </main>
     </div>
   )

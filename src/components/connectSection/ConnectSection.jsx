@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "/src/App.css"
 import "./connectSection.css"
 

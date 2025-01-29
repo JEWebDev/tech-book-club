@@ -42,4 +42,8 @@
     max-width: 100%;
     border-radius: 6px;
   }
+
+  .glow {
+    display: none;
+  }
 }
