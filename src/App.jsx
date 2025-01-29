@@ -1,6 +1,7 @@
 import "./App.css"
 import { HeroSection } from "./components/heroSection/HeroSection.jsx"
 import { PerksSection } from "./components/perksSection/PerksSection.jsx"
+import { ConnectSection } from "./components/connectSection/ConnectSection.jsx"
 function App() {
   return (
     <div className="page">
@@ -12,6 +13,7 @@ function App() {
           and level up your skills one chapter at the time."
         ></HeroSection>
         <PerksSection heading="Read together, grow together"></PerksSection>
+        <ConnectSection></ConnectSection>
       </main>
     </div>
   )
