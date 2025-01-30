@@ -5,6 +5,8 @@ import { ConnectSection } from "./components/connectSection/ConnectSection.jsx"
 import { StepsSection } from "./components/stepsSection/StepsSection.jsx"
 import { MembershipsSection } from "./components/membershipsSection/MembershipsSection.jsx"
 import { TestimonialSection } from "./components/testimonialSection/TestimonialSection.jsx"
+import { Footer } from "./components/footer/Footer.jsx"
+
 function App() {
   return (
     <div className="page">
@@ -21,6 +23,7 @@ function App() {
         <MembershipsSection></MembershipsSection>
         <TestimonialSection></TestimonialSection>
       </main>
+      <Footer></Footer>
     </div>
   )
 }

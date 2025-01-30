@@ -22,3 +22,8 @@
 
   background-color: var(--light-salmon-50);
 }
+.main-button.dark {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid white;
+}
