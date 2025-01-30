@@ -4,6 +4,7 @@ import { PerksSection } from "./components/perksSection/PerksSection.jsx"
 import { ConnectSection } from "./components/connectSection/ConnectSection.jsx"
 import { StepsSection } from "./components/stepsSection/StepsSection.jsx"
 import { MembershipsSection } from "./components/membershipsSection/MembershipsSection.jsx"
+import { TestimonialSection } from "./components/testimonialSection/TestimonialSection.jsx"
 function App() {
   return (
     <div className="page">
@@ -18,6 +19,7 @@ function App() {
         <ConnectSection></ConnectSection>
         <StepsSection></StepsSection>
         <MembershipsSection></MembershipsSection>
+        <TestimonialSection></TestimonialSection>
       </main>
     </div>
   )
