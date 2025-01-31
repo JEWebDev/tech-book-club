@@ -2,6 +2,7 @@
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 
   .perks__description {
@@ -18,5 +19,11 @@
   }
   img {
     border-radius: 12px;
+  }
+}
+
+@media (min-width: 430px) {
+  .perks-section {
+    padding: 0 2rem;
   }
 }

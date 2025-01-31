@@ -1,24 +1,15 @@
 .card {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 
-  img.avatar {
-    max-width: 110px;
-    max-height: 40px;
-  }
-
-  .joined {
-    display: flex;
-    flex-direction: column;
-
-    p {
-      margin: 0;
-      font-family: "Martian Mono";
-      font-size: var(--text-preset-7);
-      font-weight: 400;
-      line-height: 1.2;
-      letter-spacing: -1px;
-    }
+  p {
+    text-wrap: wrap;
+    font-family: "Martian Mono";
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 14px;
   }
 }

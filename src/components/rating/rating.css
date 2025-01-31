@@ -1,5 +1,8 @@
 .rating {
+  display: flex;
   img {
-    display: inline !important;
+    max-height: 24px;
+    min-height: 24px;
+    min-width: 24px;
   }
 }
