@@ -6,7 +6,7 @@
   align-items: center;
   gap: 4rem;
 
-  background-image: url("assets/images/pattern-light-bg.svg");
+  background-image: url("/assets/images/pattern-light-bg.svg");
 
   header {
     width: 100%;
