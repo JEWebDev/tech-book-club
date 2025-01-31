@@ -64,6 +64,10 @@
 
     picture {
       position: relative;
+      width: 100%;
+    }
+    picture img:first-child {
+      width: 100%;
     }
 
     .icons {

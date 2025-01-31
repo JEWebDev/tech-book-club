@@ -67,6 +67,7 @@
 
 @media (min-width: 430px) {
   .steps-section {
+    padding: 0 2rem;
     .content {
       padding: 5rem 2rem;
       display: flex;
