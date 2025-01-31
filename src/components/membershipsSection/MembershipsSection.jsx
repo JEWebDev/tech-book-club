@@ -4,7 +4,7 @@ import { MainButton } from "../mainButton/MainButton"
 
 export function MembershipsSection() {
   return (
-    <section className="membership-options">
+    <section className="membership-options" id="membership-section">
       <h2 className="mobile">Membership Options</h2>
       <ul className="plans-list">
         <li className="plan">

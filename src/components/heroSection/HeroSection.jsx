@@ -16,6 +16,7 @@ export function HeroSection({ heading, description }) {
             <MainButton
               text={"review membership options"}
               img={"assets/images/icon-arrow-down.svg"}
+              href="#membership-section"
             ></MainButton>
             <Joined number={200}></Joined>
           </div>
