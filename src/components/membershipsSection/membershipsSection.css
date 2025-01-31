@@ -58,3 +58,39 @@
     }
   }
 }
+
+@media (min-width: 430px) {
+  .membership-options {
+    display: flex;
+    gap: 2.5rem;
+
+    .plans-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .plan {
+        width: 340px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .membership-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .plans-list .plan {
+      max-width: 286px;
+      max-height: 358px;
+      align-self: center;
+    }
+
+    .plans-list .plan.featured {
+      min-width: 350px;
+      min-height: 390px;
+    }
+  }
+}

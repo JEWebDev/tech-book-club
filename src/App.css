@@ -162,3 +162,11 @@ ul.perks-list {
     letter-spacing: -2px;
   }
 }
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+  }
+}
