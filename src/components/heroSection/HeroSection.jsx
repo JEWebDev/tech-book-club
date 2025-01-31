@@ -24,8 +24,8 @@ export function HeroSection({ heading, description }) {
         <picture>
           <img src="assets/images/image-hero-mobile.webp" alt="" />
         </picture>
-        <div className="glow"></div>
       </div>
+      <div className="glow"></div>
     </section>
   )
 }

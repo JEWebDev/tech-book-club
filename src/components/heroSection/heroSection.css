@@ -67,6 +67,15 @@
 @media (min-width: 430px) {
   .hero-section {
     padding: 0 2rem 4rem 2rem;
+    overflow: hidden;
+    position: relative;
+
+    .glow {
+      display: block;
+      right: 2%;
+      top: 76%;
+      z-index: -1;
+    }
   }
 }
 @media (min-width: 1240px) {
@@ -94,6 +103,11 @@
       img {
         max-width: 540px;
       }
+    }
+    .glow {
+      position: absolute;
+      top: 45%;
+      right: -8.5%;
     }
   }
 }

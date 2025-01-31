@@ -6,7 +6,6 @@ import { StepsSection } from "./components/stepsSection/StepsSection.jsx"
 import { MembershipsSection } from "./components/membershipsSection/MembershipsSection.jsx"
 import { TestimonialSection } from "./components/testimonialSection/TestimonialSection.jsx"
 import { Footer } from "./components/footer/Footer.jsx"
-import { Header } from "./components/header/Header.jsx"
 
 function App() {
   return (

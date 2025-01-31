@@ -28,6 +28,9 @@
         flex-direction: column;
         gap: 1rem;
 
+        .arrow {
+          display: none;
+        }
         .number {
           min-width: 32px;
           min-height: 32px;
@@ -58,6 +61,54 @@
       height: 684px;
       transform: translate(62%, 4.8rem);
       filter: blur(50px);
+    }
+  }
+}
+
+@media (min-width: 430px) {
+  .steps-section {
+    .content {
+      padding: 5rem 2rem;
+      display: flex;
+      gap: 3rem;
+      h2 {
+        text-wrap: pretty;
+        font-size: 50px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-section {
+    display: flex;
+    justify-content: center;
+    .content {
+      display: flex;
+      align-items: center;
+      h2 {
+        text-align: center;
+        max-width: 512px;
+      }
+      .steps-list {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        .step {
+          max-width: 227px;
+        }
+        .step .icons {
+          display: flex;
+          justify-content: space-between;
+        }
+        .step .arrow {
+          display: block;
+        }
+      }
     }
   }
 }

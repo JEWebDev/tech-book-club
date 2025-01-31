@@ -86,6 +86,10 @@
 
     .section__text {
       max-width: 530px;
+
+      p {
+        text-wrap: pretty;
+      }
     }
 
     picture,
