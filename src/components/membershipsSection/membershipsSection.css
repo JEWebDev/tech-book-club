@@ -61,6 +61,7 @@
 
 @media (min-width: 430px) {
   .membership-options {
+    padding: 0 2rem;
     display: flex;
     gap: 2.5rem;
 
