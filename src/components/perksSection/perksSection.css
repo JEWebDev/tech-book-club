@@ -17,6 +17,10 @@
     max-width: 21px;
     max-height: 21px;
   }
+  picture,
+  img {
+    width: 100%;
+  }
   img {
     border-radius: 12px;
   }
@@ -25,5 +29,25 @@
 @media (min-width: 430px) {
   .perks-section {
     padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .perks-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4rem;
+
+    .perks__description {
+      max-width: 530px;
+      display: flex;
+      flex-direction: column;
+      gap: 2.125rem;
+    }
+    picture {
+      max-width: 560px;
+      height: auto;
+    }
   }
 }

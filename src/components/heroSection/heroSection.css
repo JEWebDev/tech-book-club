@@ -69,7 +69,7 @@
     padding: 2rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .hero-section {
     padding: 2rem 8.4375rem 5rem 8.4375rem;
     display: flex;
@@ -87,6 +87,9 @@
         justify-content: center;
       }
 
+      .main-button {
+        font-size: 18px;
+      }
       picture,
       img {
         max-width: 540px;
