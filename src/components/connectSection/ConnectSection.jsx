@@ -6,9 +6,8 @@ export function ConnectSection() {
     <section className="connect-section">
       <div className="section__text">
         <h2 className="mobile">
-          Not your average book
+          Not your average book{" "}
           <span>
-            {" "}
             club
             <img
               src="assets/images/pattern-circle.png"

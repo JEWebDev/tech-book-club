@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./joined.css"
 import { Rating } from "/src/components/rating/Rating"
 export function Joined() {
