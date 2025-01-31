@@ -5,7 +5,7 @@ export function ConnectSection() {
   return (
     <section className="connect-section">
       <div className="section__text">
-        <h2 className="mobile">
+        <h2>
           Not your average book{" "}
           <span>
             club
@@ -24,6 +24,7 @@ export function ConnectSection() {
       </div>
       <picture>
         <img src="assets/images/image-not-average-mobile.webp" alt="" />
+        <img src="assets/images/logos-tech.svg" alt="" className="icons" />
       </picture>
     </section>
   )
