@@ -130,7 +130,7 @@ ul.perks-list {
   }
 
   li::before {
-    content: url("assets/images/icon-check.svg");
+    content: url("/assets/images/icon-check.svg");
   }
 }
 
