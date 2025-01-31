@@ -22,8 +22,26 @@
 
   background-color: var(--light-salmon-50);
 }
+
+.main-button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+.main-button:focus {
+  outline: 2px solid var(--neutral-700);
+  outline-offset: 3px;
+}
 .main-button.dark {
   background-color: transparent;
   color: #ffffff;
   border: 2px solid white;
+}
+.main-button.dark:hover {
+  cursor: pointer;
+  background: linear-gradient(107deg, #385159 -11.37%, #062630 61.84%);
+}
+
+.main-button.dark:focus {
+  outline: 2px solid var(--neutral-200);
+  outline-offset: 3px;
 }

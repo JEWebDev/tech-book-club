@@ -18,7 +18,7 @@ export function MainButton({ text, img, href, theme }) {
       return (
         <a
           href={href ? href : "#"}
-          className={theme ? "main-button " + theme : "main-button"}
+          className={theme ? `main-button ${theme}` : "main-button"}
         >
           {text}
         </a>
