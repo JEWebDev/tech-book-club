@@ -1,3 +1,4 @@
+import "./rating.css"
 export function Rating() {
   return (
     <div className="rating">

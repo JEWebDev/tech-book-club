@@ -8,6 +8,63 @@
   --light-salmon-50: #fff5ef;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
 @font-face {
   font-family: "Martian Mono";
   src: url("/assets/fonts/martian-mono/MartianMono-VariableFont.ttf");
@@ -16,12 +73,6 @@
 @font-face {
   font-family: "Inter";
   src: url("/assets/fonts/inter/Inter-VariableFont.ttf");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -45,22 +96,10 @@ img {
 }
 
 h1 {
-  font-size: 62px;
-  line-height: 1.2;
-  letter-spacing: -2px;
-}
-
-h1.mobile {
   font-size: 38px;
 }
 
 h2 {
-  font-size: 50px;
-  line-height: 1.3;
-  letter-spacing: -2px;
-}
-
-h2.mobile {
   font-size: 34px;
 }
 
@@ -106,4 +145,19 @@ ul.perks-list {
 
   width: 684px;
   height: 684px;
+}
+
+@media (min-width: 430px) {
+  h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 1.3;
+    letter-spacing: -2px;
+  }
 }

@@ -9,7 +9,7 @@ export function HeroSection({ heading, description }) {
     <section className="hero-section">
       <Header></Header>
       <div className="hero__text">
-        <h1 className="mobile gradient">{heading}</h1>
+        <h1 className="gradient">{heading}</h1>
         <p>{description}</p>
         <div className="hero-cta">
           <MainButton

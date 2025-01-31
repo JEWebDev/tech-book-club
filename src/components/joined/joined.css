@@ -3,7 +3,7 @@
   align-items: center;
   gap: 12px;
 
-  img {
+  img.avatar {
     max-width: 110px;
     max-height: 40px;
   }

@@ -5,6 +5,7 @@ export function Joined({ number }) {
   return (
     <div className="card">
       <img
+        className="avatar"
         src="assets/images/image-avatars.webp"
         alt="People who already joined"
       />
