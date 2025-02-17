@@ -1,5 +1,5 @@
 footer {
-  background: url("assets/images/pattern-dark-bg.svg");
+  background: url("/assets/images/pattern-dark-bg.svg");
   background-color: var(--neutral-900);
   padding-top: 48px;
   padding-inline: 16px;
