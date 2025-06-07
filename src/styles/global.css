@@ -16,11 +16,13 @@
 @font-face {
   font-family: "Martian Mono";
   src: url("./src/assets/fonts/MartianMono-VariableFont.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
   src: url("./src/assets/fonts/Inter-VariableFont.ttf");
+  font-display: swap;
 }
 
 @utility text-preset-1 {
@@ -43,6 +45,9 @@
 
 @utility text-preset-5 {
   font: var(--text-preset-5);
+}
+@utility text-martian-mono {
+  font-family: "Martian Mono";
 }
 
 :root {

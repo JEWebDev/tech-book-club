@@ -1,0 +1,10 @@
+---
+const {href} = Astro.props
+---
+<a
+  href={href}
+  tabindex="0"
+  class="py-[20px] px-[22px] max-h-[64px] border-[2px] border-white rounded-[8px] font-[Martian_Mono] text-[1rem] lg:text-[18px] flex font-semibold leading-[1.3] tracking-[-1px] gap-4 items-center justify-center md:max-w-[380px] uppercase relative z-[10] text-neutral-50 transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#385159] hover:to-[#062630] focus:outline-2 focus:outline-neutral-200 focus:outline-offset-[3px] active:scale-95 group"
+>
+  <slot />
+</a>

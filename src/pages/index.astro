@@ -1,35 +1,36 @@
 ---
 import PrimaryButton from '../components/PrimaryButton.astro';
+import SecondaryButton from '../components/SecondaryButton.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css"
 ---
 
 <Layout>
-	<section class="pb-[80px] bg-[url(./src/assets/pattern-light-bg.svg)] bg-light-salmon-50 pt-6 px-4 md:px-8 md:pt-8 flex flex-col overflow-y-hidden" id="hero-section">
+	<section class="pb-[80px] bg-[url(./src/assets/pattern-light-bg.svg)] bg-light-salmon-50 pt-6 px-4 md:px-8 md:pt-8 flex flex-col overflow-hidden" id="hero-section">
 		<header class="lg:max-w-[1440px] lg:mx-auto lg:min-w-[1170px] lg:mb-20">
 			<img src="./src/assets/logo.svg" alt="Tech book club logo" width="190px" height="36px">
 		</header>
 		
 		<div class="lg:max-w-[1440px] mx-auto lg:flex lg:items-center lg:gap-16 relative ">
 
-			<div class="flex flex-col gap-6 mt-12 md:mt-16 lg:mt-20  lg:max-w-[570px]">
+			<div class="flex flex-col gap-6 mt-12 md:mt-12 lg:mt-11  lg:max-w-[570px]">
 				<h1 style="background: var(--text-gradient); background-clip: text; -webkit-text-fill-color: transparent;" class="text-preset-1-m text-neutral-900 tracking-[-1px] md:text-preset-1">Join the ultimate tech book club</h1>
 				<p class="text-preset-5 text-neutral-700 tracking-[-0.5px] mb-3 md:pr-6">Turn your reading time into learning time with fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.</p>
 			<div class="flex flex-col gap-5">
-				<PrimaryButton>
+				<PrimaryButton href="#membership-section">
 					Review Membership Options
-					<img src="./src/assets/icon-arrow-down.svg" alt="">
+					<img src="./src/assets/icon-arrow-down.svg" alt="arrow icon pointing down" class="transition-transform duration-300 group-hover:translate-y-1">
 				</PrimaryButton>
 				
 				<div class="flex items-center gap-3 mb-11">
-					<img src="./src/assets/image-avatars.webp" alt="users avatars" width="110px" height="40px">
+					<img src="./src/assets/image-avatars.webp" alt="five profile pictures of people who already joined" width="110px" height="40px">
 					<div>
-						<div class="flex gap-0">
-							<img src="./src/assets/icon-star.svg" alt="star">
-							<img src="./src/assets/icon-star.svg" alt="star">
-							<img src="./src/assets/icon-star.svg" alt="star">
-							<img src="./src/assets/icon-star.svg" alt="star">
-							<img src="./src/assets/icon-star.svg" alt="star">
+						<div class="flex gap-0" role="presentation">
+							<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy" width="24px" height="24px">
+							<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy" width="24px" height="24px">
+							<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy" width="24px" height="24px">
+							<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy" width="24px" height="24px">
+							<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy" width="24px" height="24px">
 						</div>
 						<p class="text-neutral-700 font-[Martian_Mono] text-[14px] leading-[1.2] tracking-[-1px]">200+ developers joined already</p>
 					</div>
@@ -40,12 +41,216 @@ import "../styles/global.css"
 			
 			<picture class="h-fit z-[10]">
 				<source srcset="../src/assets/image-hero-tablet.webp" media="(min-width: 768px)">
-				<source srcset="../src/assets/image-hero-desktop.webp" media="(min-width:1440px)">
-				<img src="../src/assets/image-hero-mobile.webp" alt="hero image" class="rounded-[5px] min-h-[385px] lg:max-w-[540px] lg:max-h-[606px] block">
+				<source srcset="../src/assets/image-hero-desktop.webp" media="(min-width:1440px) ">
+				<img src="../src/assets/image-hero-mobile.webp" alt="A group of people discussing about the book they are reading"  width="540" height="606" class="rounded-[5px] min-h-[385px] lg:max-w-[540px] lg:max-h-[606px] block" sizes="(min-width: 1440px) 540px, (min-width: 768px) 100vw, 100vw" loading="eager" decoding="async">
+				
 			</picture>
-			<div class="w-[684px] h-[684px] bg-glow blur-[200px] rounded-full absolute right-[-50%] bottom-[-50%] z-[1] hidden md:block lg:block">
+			<div class="w-[684px] h-[684px] bg-glow blur-[200px] rounded-full absolute right-[-50%] bottom-[-50%] z-[1] hidden md:block lg:block pointer-events-none">
 
 			</div>
 		</div>
 	</section>
-</Layout>
+	<section id="description-section" class="py-8 px-4 lg:pt-[120px] lg:pb-[60px] md:px-8 md:py-20 flex flex-col gap-16 md:gap-20 lg:gap-[120px]">
+		<div class="lg:max-w-[1170px] mx-auto lg:flex lg:items-center lg:gap-16">
+
+			<div class="flex flex-col gap-6 lg:flex-row-reverse lg:items-center lg:gap-[80px]">
+				<div>
+					<h2 class="text-preset-3 md:text-preset-2 md:mb-[34px] md:pr-10 md:font-semibold">Read together, grow together</h2>
+					<ul class="flex flex-col gap-4 lg:gap-6">
+						<li class="text-[20px] font-[Inter] flex gap-[14px] text-neutral-700">
+							<img src="../src/assets/icon-check.svg" alt="check icon" loading="lazy">
+							<p>Monthly curated tech reads selected by industry experts</p>
+						</li>
+						<li class="text-[20px] font-[Inter] flex gap-[14px] text-neutral-700">
+							<img src="../src/assets/icon-check.svg" alt="check icon" loading="lazy">
+							<p>Virtual and in-person meetups for deep-dive discussions</p>
+						</li>
+						<li class="text-[20px] font-[Inter] flex gap-[14px] text-neutral-700">
+							<img src="../src/assets/icon-check.svg" alt="check icon" loading="lazy">
+							<p>Early access to new tech book releases</p>
+						</li>
+						<li class="text-[20px] font-[Inter] flex gap-[14px] text-neutral-700">
+							<img src="../src/assets/icon-check.svg" alt="check icon" loading="lazy">
+							<p>Author Q&A sessions with tech thought leaders</p>
+						</li>
+					</ul>
+				</div>
+				
+				<picture class="h-fit z-[10] mt-6 lg:mt-0">
+					<source srcset="../src/assets/image-read-together-tablet.webp" media="(min-width: 768px)">
+					<source srcset="../src/assets/image-read-together-desktop.webp" media="(min-width:1440px)">
+					<img src="../src/assets/image-read-together-mobile.webp" alt="A group of people smiling and having a great time" width="560" height="520" class="rounded-[20px] min-h-[385px] lg:max-w-[560px] lg:max-h-[520px] block" loading="lazy" sizes="(min-width: 1440px) 560px, (min-width: 768px) 100vw, 100vw">	
+				</picture>
+			</div>
+			
+		</div>
+		<div class="lg:max-w-[1170px] mx-auto lg:flex lg:items-center lg:gap-16">
+
+			<div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-[80px]">
+				<div>
+					<h2 class="text-preset-3 md:text-preset-2 mb-6 tracking-[-2px]">Not your average book <span class="relative">club <img src="../src/assets/pattern-circle.png" alt="orange oval circle to highlight a word" class="absolute bottom-0 left-[-10px]  md:bottom-[-2px] lg:left-[-15px] min-w-[108px] md:min-w-[158px]" loading="lazy"></span></h2>
+					<p class="text-[20px] text-neutral-700 leading-[1.5]">Connect with a community that speaks your language - from <strong>Python</strong> to <strong>Typescript</strong> and everything in between. Our discussions blend technical depth with practical applications.</p>
+				</div>
+				<picture class="h-fit z-[10] mt-6 lg:mt-0 relative">
+					<source srcset="../src/assets/image-not-average-tablet.webp" media="(min-width: 768px)">
+					<source srcset="../src/assets/image-not-average-desktop.webp" media="(min-width:1440px)">
+					<img src="../src/assets/image-not-average-mobile.webp" alt="A group of people gathered to read books" class="rounded-[20px] min-h-[385px] lg:max-w-[560px] lg:max-h-[520px] block" loading="lazy">	
+					<div class="hidden md:block md:absolute md:bottom-[50px] md:right-[50px] lg:left-[-80px]">
+						<img src="../src/assets/logos-tech.svg" alt="github, react and typescript logos" loading="lazy">
+					</div>
+				</picture>
+			</div>
+
+		</div>
+	</section>
+	<section class="py-[32px] md:py-16 lg:py-[60px] px-4 text-martian-mono md:px-8">
+		<div class="px-4 py-16 md:py-20 md:px-8 lg:px-[] bg-[url(../src/assets/pattern-light-bg.svg)] bg-[#faf5f3] rounded-[12px] flex flex-col gap-8 md:gap-12 lg:gap-16 lg:justify-center lg:items-center relative overflow-hidden max-w-[1170px] lg:mx-auto">
+			<h2 class="text-martian-mono text-preset-3 md:text-preset-2 md:font-semibold lg:text-center lg:max-w-[512px] tracking-[-2px]">Your tech reading journey</h2>
+			<ul class="flex flex-col gap-8 lg:gap-12 lg:flex-row z-[2]">
+				<li class="flex flex-col gap-4 text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold ">
+					<div class="flex justify-between">
+						<p class="text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold border-[2px] w-[32px] h-[32px] flex justify-center items-center rounded-[4px]">1</p>
+						<img src="../src/assets/pattern-arrow.svg" alt="orange arrow pointing right" class="hidden lg:block" loading="lazy" width="76.74px" height="20.51px">
+					</div>
+					<p>Choose your membership tier</p>
+				</li>
+				
+				<li class="flex flex-col gap-4 text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold ">
+					<div class="flex justify-between">
+						<p class="text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold border-[2px] w-[32px] h-[32px] flex justify-center items-center rounded-[4px]">2</p>
+						<img src="../src/assets/pattern-arrow.svg" alt="orange arrow pointing right" class="hidden lg:block" loading="lazy" width="76.74px" height="20.51px">
+					</div>
+					<p>Get your monthly book selection</p>
+				</li>
+
+				<li class="flex flex-col gap-4 text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold ">
+					<div class="flex justify-between">
+						<p class="text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold border-[2px] w-[32px] h-[32px] flex justify-center items-center rounded-[4px]">3</p>
+						<img src="../src/assets/pattern-arrow.svg" alt="orange arrow pointing right" class="hidden lg:block" loading="lazy" width="76.74px" height="20.51px">
+					</div>
+					<p>Join our discussion forums</p>
+				</li>
+
+				<li class="flex flex-col gap-4 text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold ">
+					<div class="flex justify-between">
+						<p class="text-[16px]  md:text-[18px] md:tracking-[-2px] text-martian-mono font-semibold border-[2px] w-[32px] h-[32px] flex justify-center items-center rounded-[4px]">4</p>
+					</div>
+					<p>Attend exclusive meetups</p>
+				</li>
+
+			</ul>
+			<div class="w-[684px] h-[684px] bg-glow blur-[200px] rounded-full absolute left-[67%] bottom-[-65%] md:left-[50%] md:bottom-[-45%] lg:bottom-[-90%] lg:left-[78%] z-[1] md:block pointer-events-none">
+	
+			</div>
+		</div>
+	</section>
+	<section class="py-[32px] md:py-16 lg:py-[60px] px-4  md:px-8 flex flex-col gap-6" id="membership-section">
+		<h2 class="font-semibold text-[34px] tracking-[-2px] leading-[1.3] text-martian-mono lg:text-center">Membership options</h2>
+		<div class="max-w-[1170px] lg:mx-auto flex flex-col md:flex-wrap md:flex-row gap-6">
+
+			<article class="p-6 border border-[#e6e1df] rounded-[8px] md:min-w-[340px] lg:min-w-[286px]">
+				<div class="pb-6 border-b border-neutral-200">
+					<h3 class="text-martian-mono font-semibold text-[24px] leading-[1.1] tracking-[-1px] mb-6">Starter</h3>
+					<p class="text-[20px]"><strong class="text-martian-mono font-semibold text-[34px] leading-[1.3] tracking-[-1px]">$19</strong>/month</p>
+				</div>
+				<ul class="mt-[26px] mb-8 flex flex-col gap-[18px] text-[20px] text-neutral-900">
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>1 book/month</p>
+					</li>
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>Online forums</p>
+					</li>
+				</ul>
+				<PrimaryButton href="#subscribe">subscribe now</PrimaryButton>
+			</article>
+
+			<article class="p-6 border border-[#e6e1df] rounded-[8px] bg-[#faf5f3] md:min-w-[340px] lg:min-w-[350px] relative overflow-hidden">
+				<div class="pb-6 border-b border-neutral-200">
+					<h3 class="text-martian-mono font-semibold text-[24px] leading-[1.1] tracking-[-1px] mb-6">Pro</h3>
+					<p class="text-[20px]"><strong class="text-martian-mono font-semibold text-[34px] leading-[1.3] tracking-[-1px]">$29</strong>/month</p>
+				</div>
+				<ul class="mt-[26px] mb-8 flex flex-col gap-[18px] text-[20px] text-neutral-900">
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>2 books/month</p>
+					</li>
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>Virtual meetups</p>
+					</li>
+				</ul>
+				<PrimaryButton href="#subscribe">subscribe now</PrimaryButton>
+			<div class="w-[684px] h-[684px] bg-glow blur-[200px] rounded-full absolute  bottom-[-510px] right-[-460px] z-[0]   pointer-events-none">
+			</div>
+			</article>
+
+			<article class="p-6 border border-[#e6e1df] rounded-[8px] md:min-w-[340px] lg:min-w-[286px]">
+				<div class="pb-6 border-b border-neutral-200">
+					<h3 class="text-martian-mono font-semibold text-[24px] leading-[1.1] tracking-[-1px] mb-6">Enterprise</h3>
+					<p class="text-[20px]"><strong class="text-martian-mono font-semibold text-[34px] leading-[1.3] tracking-[-1px]">Custom</strong></p>
+				</div>
+				<ul class="mt-[26px] mb-8 flex flex-col gap-[18px] text-[20px] text-neutral-900">
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>Team access</p>
+					</li>
+					<li class="flex gap-3 items-center">
+						<img src="../src/assets/icon-check.svg" alt="check icon" class="w-6 h-6" loading="lazy">
+						<p>Private sessions</p>
+					</li>
+				</ul>
+				<PrimaryButton href="#talk-to-us">Talk to Us</PrimaryButton>
+			</article>
+		</div>
+		</section>
+
+		<section class=" pt-[60px] pb-[120px] px-4 md:px-8">
+			<article class="flex flex-col gap-8 lg:items-center">
+				<div class="flex gap-0" role="presentation">
+					<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+					<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+					<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+					<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+					<img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+				</div>
+				<blockquote cite="Sarah Chen" class="text-martian-mono font-semibold text-2xl md:text-[34px] lg:text-center lg:max-w-[970px] tracking-[-1px] leading-[1.1]">
+					"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussions are gold!"
+				</blockquote>
+				<p class="text-preset-5 text-neutral-700 tracking-[-0.5px]">Sarah Chen, Software Architect</p>
+			</article>
+		</section>
+		<footer class="pt-[48px] md:pt-[64px] lg:pt-[80px] px-4 md:px-8 bg-neutral-900 bg-[url(../src/assets/pattern-dark-bg.svg)] text-neutral-50 rounded-tl-[16px] rounded-tr-[16px]">
+			<div>
+				<p class="text-martian-mono font-semibold text-[34px] md:text-[50px] leading-[1.3] tracking-[-2px] text-center mb-[40px] lg:max-w-[685px] lg:mx-auto">Ready to debug your reading list?</p>
+				<div class="flex flex-col gap-6 md:max-w-[388px] md:mx-auto">
+					<SecondaryButton href="#membership-section">Review Membership Options <img src="../src/assets/icon-arrow-up.svg" alt="arrow up" loading="lazy" width="24px" height="24px" class="transition-transform duration-300 group-hover:-translate-y-1"></SecondaryButton>
+					<div class="flex items-center gap-3 mb-11 md:mb-[64px]">
+					<img src="./src/assets/image-avatars.webp" alt="profile pictures of five users who already joined" width="110px" height="40px" loading="lazy">
+					<div>
+						<div class="flex gap-0 mb-1">
+							<img src="./src/assets/icon-star.svg" alt="star" width="28px" height="28px" loading="lazy">
+							<img src="./src/assets/icon-star.svg" alt="star" width="28px" height="28px" loading="lazy">
+							<img src="./src/assets/icon-star.svg" alt="star" width="28px" height="28px" loading="lazy">
+							<img src="./src/assets/icon-star.svg" alt="star" width="28px" height="28px" loading="lazy">
+							<img src="./src/assets/icon-star.svg" alt="star" width="28px" height="28px" loading="lazy">
+						</div>
+						<p class="font-[Martian_Mono] text-[14px] leading-[1.2] tracking-[-1px]">200+ developers joined already</p>
+					</div>
+				</div>
+				</div> 
+			</div>
+			<div class="border-t border-neutral-700 flex flex-col items-center md:flex-row md:justify-between gap-4 w-full px-6 py-6 md:px-8 lg:max-w-[1170px] lg:mx-auto">
+				<p>&copy; - Tech Book Club</p>
+				<div class="flex gap-6">
+					<a href="#bluesky"><img src="../src/assets/logo-bluesky.svg" alt="bluesky logo" aria-label="Visit our Bluesky Page" loading="lazy"></a>
+					<a href="#linkedin"><img src="../src/assets/logo-linkedin.svg" alt="linked in logo" aria-label="Visit our Linked in Page" loading="lazy"></a>
+				</div>
+			</div>
+		</footer>
+	</Layout>
+	<!--TODO: Extract these into components:-->
+	<!--*PricingCard -->
+	<!--*FeatureListItem -->
+	<!--*TestimonialBlock -->
