@@ -15,13 +15,13 @@
 
 @font-face {
   font-family: "Martian Mono";
-  src: url("./src/assets/fonts/MartianMono-VariableFont.ttf");
+  src: url("./assets/fonts/MartianMono-VariableFont.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("./src/assets/fonts/Inter-VariableFont.ttf");
+  src: url("./assets/fonts/Inter-VariableFont.ttf");
   font-display: swap;
 }
 

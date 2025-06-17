@@ -5,7 +5,7 @@ const {author, comment, rating=5} = Astro.props
 	<div class="flex gap-0" role="presentation">
         {
             Array.from({length: rating}).map(()=> (
-                <img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+                <img src="./assets/icon-star.svg" alt="gold star rating" loading="lazy">
             ))
         }
 	</div>
