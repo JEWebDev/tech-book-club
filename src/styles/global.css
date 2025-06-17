@@ -66,6 +66,11 @@
   --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100dvh;
   font-family: "Inter";

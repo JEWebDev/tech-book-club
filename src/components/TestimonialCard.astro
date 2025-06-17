@@ -1,0 +1,16 @@
+---
+const {author, comment, rating=5} = Astro.props
+---
+<article class="flex flex-col gap-8 lg:items-center">
+	<div class="flex gap-0" role="presentation">
+        {
+            Array.from({length: rating}).map(()=> (
+                <img src="./src/assets/icon-star.svg" alt="gold star rating" loading="lazy">
+            ))
+        }
+	</div>
+	<blockquote cite="Sarah Chen" class="text-martian-mono font-semibold text-2xl md:text-[34px] lg:text-center lg:max-w-[970px] tracking-[-1px] leading-[1.1]">
+		{comment}
+	</blockquote>
+	<p class="text-preset-5 text-neutral-700 tracking-[-0.5px]">{author}</p>
+</article>
